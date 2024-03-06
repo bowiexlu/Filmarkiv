@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* CSS Document */
+/*-- Inställningar för responsbiliten och storlekarna --*/
+  *{
+	  box-sizing:border-box;
+  }
+  /*För mobiler*/
+  [class*="size-"]{
+	  width:98%;
+	  margin:1%;
+	  float:left;
+  }
+  /*För större skärmar, brypunkt 768px*/
+  @media only screen and (min-width:768px){
+	  .size-1{width:31.3%;}
+	  .size-2{width:64.6%;}
+  }
+
+/*-- Inställningaren för res. och stoelek slutar --*/
+/*--Vanliga CSS-inställningar--*/
+  body{
+	  font-size:16px;
+	  font-family:Tahoma, Geneva, sans-serif;
+	  max-width:1400px;
+	  margin:0 auto;
+  }
+  /* Här saknades punkten för second */
+  .first, .second{
+	  float:left;
+	  margin: 0 2.5%;
+	  width:45%;
+  }
+  header, footer{
+	  background-color:#666666;
+	  padding:5px;
+  }
+  nav{
+	  background-color:#999999;
+	  padding:5px;
+  }
+  footer{
+	  clear:both;
+  }
+  header h1{
+	  font-size:24px;
+	  text-align:center;
+	  color:white;
+	  margin:20px 0;
+  }
+  footer p{
+	  color:white;
+  }
+  button{
+	  padding:10px;
+	  border-radius:5px;
+  }
+/*-- Inställningar för att styra menyn --*/
+  aside a:link, a:visited{
+	  background-color:#DFDFDF;
+	  text-decoration:none;
+	  padding:5px;
+	  border-radius:5px;
+	  color:black;
+  }
+  aside a:hover{
+	  background-color:#999999;
+	  text-decoration:none;
+	  padding:5px;
+	  border-radius:5px;
+	  color:white;
+  }
+  aside label{
+	  display:block;
+	  padding:8px 30px;
+	  margin:0 0 2px 0;
+	  cursor:pointer;
+	  background-color:black;
+	  border-radius:3px;
+	  color:white;
+	  transition:ease 0.5s;
+	  position:relative;  	  
+  }
+  aside label:hover{
+	  background-color:#ADCCFA;
+  }
+  aside label::after{
+	  content:'+';
+	  font-size:22px;
+	  font-weight:bold;
+	  position:absolute;
+	  left:10px;
+	  top:2px;
+  }
+  aside input:checked + label::after{
+	   content:'-';
+	   right:14px;
+	   left:3px;
+  }
+  aside .content{
+	  background-color:#FAFAFA;
+	  padding:10px 25px;
+	  border:1px solid #A7A7A7;
+	  margin:0 0 1px 0;
+	  border-radius:3px;
+  }
+  aside input + label + .content{
+	  display:none;
+  }
+  aside input:checked + label + .content{
+	  display:block;
+  }
+  aside input{
+	  display:none;
+  }
+/*-- Menyinställningar slutar --*/
+
+/*-- Inställningar för formuläret new.php --*/
+  article input[type=text],select{
+	  width:100%;
+	  padding:12px;
+	  border:1px solid #CCC;
+	  border-radius:4px;
+	  resize:vertical;
+  }
+  /*input[type=file]::file-selector-button*/
+  article input[type=submit], input[type=file]{
+	  background-color:#069;
+	  color:white;
+	  padding:12px;
+	  border:1px solid #999;
+	  border-radius:4px;
+	  box-sizing:border-box;
+  }
+  
+/*-- Formuläringställmingar slutar --*/
+
+/*-- Inställningar för filen allfilms.php--*/
+  #container{
+	  width:98%;
+	  float:left;
+	  margin:5px;
+	  background-color:#CCC;
+	  border-radius:10px;
+	  padding:10px;
+  }
+  #container table{
+	  font-family:Verdana, Geneva, sans-serif;
+	  font-size:16px;
+	  border-collapse:collapse;
+	  width:90%;
+	  margin:0 auto;
+  }
+  #container table, th, td{
+	  border:none;
+  }
+  #container th, td{
+	  heigth:25px;
+	  text-align:center;
+	  padding:5px;
+  }
+  #container tr:nth-child(even){
+	  background-color:#E6F2FF;	  	  
+  }
+  #container th{
+	  background-color:black;
+	  color:white;	  	  
+  }
+/*-- Inställningar för filen allfilms.php slutar--*/
+
+	  
+	  
